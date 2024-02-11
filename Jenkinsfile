@@ -54,7 +54,7 @@ pipeline {
                 script {
 
                   echo 'started the alb'
-                  http://alb-828578710.ap-northeast-1.elb.amazonaws.com/checkout/login?redirect=/checkout/address
+                  // http://alb-828578710.ap-northeast-1.elb.amazonaws.com/checkout/login?redirect=/checkout/address
                     
                     // Configure and deploy load balancer
                     // This step depends on your cloud provider's load balancer service
