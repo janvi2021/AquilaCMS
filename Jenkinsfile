@@ -17,7 +17,7 @@ pipeline {
           // Create Docker network
           echo 'Setting up environment...'
 
-          sh "docker network create ${aquila}"
+          sh "docker network create aquila"
         }
       }
     }
@@ -48,18 +48,18 @@ pipeline {
       }
     }
 
-    //     stage('Setup Load Balancer') {
+        // stage('Setup Load Balancer') {
     //         steps {
     //             script {
 
     //               echo 'started the alb'
-    //               // http://alb-828578710.ap-northeast-1.elb.amazonaws.com/checkout/login?redirect=/checkout/address
+                  // http://alb-828578710.ap-northeast-1.elb.amazonaws.com/checkout/login?redirect=/checkout/address
 
-    //                 // Configure and deploy load balancer
-    //                 // This step depends on your cloud provider's load balancer service
-    //                 // For AWS, you would use AWS CLI or AWS SDK to create and configure an Application Load Balancer
-    //                 // Here, we'll assume the load balancer is already configured externally
-    //                 // Once configured, update DNS or route traffic to the load balancer
+                    // Configure and deploy load balancer
+                    // This step depends on your cloud provider's load balancer service
+                    // For AWS, you would use AWS CLI or AWS SDK to create and configure an Application Load Balancer
+                    // Here, we'll assume the load balancer is already configured externally
+                    // Once configured, update DNS or route traffic to the load balancer
 
     //         }
     //     }
