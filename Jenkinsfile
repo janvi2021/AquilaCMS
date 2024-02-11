@@ -10,15 +10,6 @@ pipeline {
         LOAD_BALANCER_NAME = 'aquilacms-lb'
     }
 
-    // stages {
-    //     stage('Clone Repository') {
-    //         steps {
-    //             script {
-    //                 // Clone AquilaCMS repository from GitHub
-    //                 git 'https://github.com/your-username/your-aquilacms-repo.git'
-    //             }
-    //         }
-    //     }
 
         stage('Setup') {
             steps {
@@ -70,8 +61,11 @@ pipeline {
                     // For AWS, you would use AWS CLI or AWS SDK to create and configure an Application Load Balancer
                     // Here, we'll assume the load balancer is already configured externally
                     // Once configured, update DNS or route traffic to the load balancer
-                }
+            
             }
         }
+    }
 }
+                
+                      
 
