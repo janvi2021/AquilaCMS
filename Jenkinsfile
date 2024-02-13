@@ -43,7 +43,7 @@ pipeline {
           echo 'running aquila container'
           sh "docker build -t aquilacms/aquilacms ."
 
-          sh "docker run -p 127.0.0.1:3010:3010/tcp --network=aquila --name aquila aquilacms/aquilacms"
+          sh "docker run -p 127.0.0.0:3010:3010/tcp --network=aquila --name aquila aquilacms/aquilacms"
         }
       }
     }
